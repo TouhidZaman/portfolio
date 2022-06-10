@@ -1,0 +1,17 @@
+[
+    {
+        "_id": "1",
+        "name": "bike parts",
+        "description": "Bike Parts is a full-stack project for motorbike spare parts manufacturer company to keep track of their products and to manage orders and payments form their clients"
+    },
+    {
+        "_id": "2",
+        "name": "NT Grocery Stock",
+        "description": "NT Grocery stock is a full-stack grocery inventory/ warehouse management website like ERP to keep track and manage of your inventory items."
+    },
+    {
+        "_id": "3",
+        "name": "Todo App",
+        "description": "This is a full-stack website to keep track and store a person's daily tasks. This app helps users to remember daily tasks to improve productivity"
+    }
+]

@@ -1,6 +1,7 @@
 import React from "react";
 import "./SideNav.css";
 import profile from "../../images/Touhid.jpg";
+import { Link } from "react-router-dom";
 
 const SideNav = () => {
     return (
@@ -14,19 +15,19 @@ const SideNav = () => {
             <nav className="navbar">
                 <ul>
                     <li>
-                        <a href="#home">home</a>
+                        <Link to="/">home</Link>
                     </li>
                     <li>
-                        <a href="#about">about</a>
+                        <Link to="/about">about</Link>
                     </li>
                     <li>
-                        <a href="#education">Skills</a>
+                        <Link to="/my-projects">Projects</Link>
                     </li>
                     <li>
-                        <a href="#portfolio">Projects</a>
+                        <Link to="/my-blogs">Blogs</Link>
                     </li>
                     <li>
-                        <a href="#contact">contact</a>
+                        <Link to="/contact">contact</Link>
                     </li>
                 </ul>
             </nav>
