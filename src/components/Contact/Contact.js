@@ -1,7 +1,17 @@
 import React from "react";
+import Swal from "sweetalert2";
 import "./Contact.css";
 
 const Contact = () => {
+    const handleSubmit = (event) => {
+        Swal.fire({
+            icon: "success",
+            title: "Thank you for contacting me.",
+            showConfirmButton: false,
+            timer: 2500,
+        });
+        event.preventDefault();
+    };
     return (
         <section className="contact" id="contact">
             <h1 className="heading">
@@ -32,10 +42,11 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <form action="">
-                    <input type="text" placeholder="name" className="box" />
-                    <input type="email" placeholder="email" className="box" />
+                <form onSubmit={handleSubmit}>
+                    <input required type="text" placeholder="name" className="box" />
+                    <input required type="email" placeholder="email" className="box" />
                     <textarea
+                        required
                         name=""
                         id=""
                         cols="30"
@@ -44,7 +55,7 @@ const Contact = () => {
                         placeholder="message"
                     ></textarea>
                     <button type="submit" className="btn">
-                        send <i className="fas fa-paper-plane"></i>
+                        Submit <i className="fas fa-paper-plane"></i>
                     </button>
                 </form>
             </div>

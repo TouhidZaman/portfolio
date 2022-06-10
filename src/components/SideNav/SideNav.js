@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./SideNav.css";
 import profile from "../../images/Touhid.jpg";
 import { Link } from "react-router-dom";
+// import { FaHome } from 'react-icons/fa';
+
 
 const SideNav = () => {
     const [toggleClass, setToggleClass] = useState("");
@@ -33,7 +35,7 @@ const SideNav = () => {
             <nav className="navbar">
                 <ul>
                     <li>
-                        <Link to="/">home</Link>
+                        <Link to="/"> home</Link>
                     </li>
                     <li>
                         <Link to="/about">about</Link>
