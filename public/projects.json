@@ -2,16 +2,94 @@
     {
         "_id": "1",
         "name": "bike parts",
-        "description": "Bike Parts is a full-stack project for motorbike spare parts manufacturer company to keep track of their products and to manage orders and payments form their clients"
+        "description": "Bike Parts is a full-stack project for motorbike spare parts manufacturer company to keep track of their products and to manage orders and payments form their clients",
+        "usedTechnologies": ["React", "Express", "MongoDB", "Tailwind-CSS"],
+        "images": [
+            {
+                "imgInfo": "Bike Parts Home page",
+                "imgUrl": "https://i.ibb.co/mc5TdmR/bike-parts.jpg"
+            },
+            {
+                "imgInfo": "Adding new product to the warehouse",
+                "imgUrl": "https://i.ibb.co/4ZwSZks/bike-parts-add-product-form.jpg"
+            },
+            {
+                "imgInfo": "Purchasing product from bike parts",
+                "imgUrl": "https://i.ibb.co/6HCFrFf/bike-parts-purchase-product.jpg"
+            },
+            {
+                "imgInfo": "Managing orders from admin dashboard",
+                "imgUrl": "https://i.ibb.co/9v42c9m/bike-parts-manage-orders.jpg"
+            },
+            {
+                "imgInfo": "Managing Users from admin dashboard",
+                "imgUrl": "https://i.ibb.co/r4xdXbQ/bike-parts-manage-users.jpg"
+            },
+            {
+                "imgInfo": "Managing Users from admin dashboard",
+                "imgUrl": "https://i.ibb.co/r4xdXbQ/bike-parts-manage-users.jpg"
+            },
+            {
+                "imgInfo": "Users profile section of bike parts",
+                "imgUrl": "https://i.ibb.co/71Qyyjw/bike-parts-user-profile.jpg"
+            },
+            {
+                "imgInfo": "Updating users profile section",
+                "imgUrl": "https://i.ibb.co/LgcxB3q/bike-parts-update-profile.jpg"
+            },
+            {
+                "imgInfo": "User review section of bike parts",
+                "imgUrl": "https://i.ibb.co/YL9hVnJ/bike-parts-add-review-form.jpg"
+            },
+            {
+                "imgInfo": "Making payment for purchased product",
+                "imgUrl": "https://i.ibb.co/TWTgJZg/bike-parts-make-payment.jpg"
+            }
+        ]
     },
+
     {
         "_id": "2",
         "name": "NT Grocery Stock",
-        "description": "NT Grocery stock is a full-stack grocery inventory/ warehouse management website like ERP to keep track and manage of your inventory items."
+        "description": "NT Grocery stock is a full-stack grocery inventory/ warehouse management website like ERP to keep track and manage of your inventory items.",
+        "usedTechnologies": ["React", "Express", "MongoDB"],
+        "images": [
+            {
+                "imgInfo": "Grocery Stock Home page",
+                "imgUrl": "https://i.ibb.co/cyHjyYY/grocery-stock.jpg"
+            },
+            {
+                "imgInfo": "Updating quantity of grocery item",
+                "imgUrl": "https://i.ibb.co/JQSv67m/grocery-stock-update.jpg"
+            },
+            {
+                "imgInfo": "Adding new inventory item",
+                "imgUrl": "https://i.ibb.co/0KWXQ5m/grocery-stock-add-inventory.jpg"
+            },
+            {
+                "imgInfo": "Managing inventory item",
+                "imgUrl": "https://i.ibb.co/RPzpntv/grocery-stock-manage-items.jpg"
+            }
+        ]
     },
     {
         "_id": "3",
         "name": "Todo App",
-        "description": "This is a full-stack website to keep track and store a person's daily tasks. This app helps users to remember daily tasks to improve productivity"
+        "description": "This is a full-stack website to keep track and store a person's daily tasks. This app helps users to remember daily tasks to improve productivity",
+        "usedTechnologies": ["React", "Express", "MongoDB"],
+        "images": [
+            {
+                "imgInfo": "Todo App Home page",
+                "imgUrl": "https://i.ibb.co/C7Ff3gL/todo-app-homepage.png"
+            },
+            {
+                "imgInfo": "Your all task list with managing functionality",
+                "imgUrl": "https://i.ibb.co/25F8gsc/todo-app-my-tasks.png"
+            },
+            {
+                "imgInfo": "Todo App Login Page",
+                "imgUrl": "https://i.ibb.co/hZxHz2L/todo-app-login.png"
+            }
+        ]
     }
 ]
