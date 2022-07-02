@@ -1,16 +1,34 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import "./Contact.css";
 
 const Contact = () => {
+    const form = useRef();
     const handleSubmit = (event) => {
-        Swal.fire({
-            icon: "success",
-            title: "Thank you for contacting me.",
-            showConfirmButton: false,
-            timer: 2500,
-        });
         event.preventDefault();
+
+        emailjs
+            .sendForm(
+                process.env.REACT_APP_EMAIL_SERVICE_ID,
+                process.env.REACT_APP_EMAIL_TEMPLATE_ID,
+                form.current,
+                process.env.REACT_APP_EMAIL_PUBLIC_KEY
+            )
+            .then(
+                (result) => {
+                    Swal.fire({
+                        icon: "success",
+                        title: "Thank you for contacting me.",
+                        showConfirmButton: false,
+                        timer: 2500,
+                    });
+                    // console.log(result.text);
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
     };
     return (
         <section className="contact" id="contact">
@@ -42,12 +60,24 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <form onSubmit={handleSubmit}>
-                    <input required type="text" placeholder="name" className="box" />
-                    <input required type="email" placeholder="email" className="box" />
+                <form ref={form} onSubmit={handleSubmit}>
+                    <input
+                        required
+                        type="text"
+                        placeholder="name"
+                        name="name"
+                        className="box"
+                    />
+                    <input
+                        required
+                        type="email"
+                        placeholder="email"
+                        name="email"
+                        className="box"
+                    />
                     <textarea
                         required
-                        name=""
+                        name="message"
                         id=""
                         cols="30"
                         rows="10"
